@@ -5,7 +5,7 @@ import json
 import re
 
 # Initialize Gemini client
-client = genai.Client(api_key="AIzaSyB-72wls8kg20m04xKXyusoomQxRF7LXYQ")
+client = genai.Client(api_key="AIzaSyB-################api key########")
 
 # Upload PDF
 pdf_file = "Data Input.pdf"
@@ -59,3 +59,4 @@ else:
 # Save to Excel
 df.to_excel("Expected_output.xlsx", index=False)
 print(f"✅ Excel saved with {len(df)} rows, keys determined dynamically by LLM.")
+
